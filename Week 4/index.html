@@ -4,12 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-            body {
-                min-height: 200vh;
-            }
-
             .picture {
                 background-color: black;
+                /*background-image: url("https://placehold.it/64x64");*/
                 display: inline-block;
                 height: 100px;
                 margin: 16px;
@@ -18,11 +15,18 @@
             }
 
             .picture p {
-                /*display: none;*/
+                background-color: transparent;
+                display: none;
+                height: 100px;
                 left: 0;
                 position: absolute;
                 top: 0;
-                /*visibility: hidden;*/
+                width: 100%;
+            }
+
+            .picture:hover p {
+                background-color: rebeccapurple;
+                display: block;
             }
         </style>
         <title>Web Developer</title>
