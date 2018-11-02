@@ -2,10 +2,127 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <style>
+            body {
+                font-family: sans-serif;
+                text-align: center;
+            }
+
+            div#search-bar {
+                align-items: center;
+                -webkit-box-shadow: 0 0 5px #AAA;
+                -moz-box-shadow: 0 0 5px #AAA;
+                box-shadow: 0 1px 5px #AAA;
+                display: flex;
+                margin: 16px auto 32px;
+                overflow: hidden;
+                width: 45%;
+            }
+
+            img#logo {
+                margin-top: 160px;
+                height: 102px;
+            }
+
+            img#microphone {
+                height: 24px;
+                margin-right: 12px;
+            }
+
+            input#search {
+                border: none;
+                float: left;
+                flex-grow: 1;
+                height: 100%;
+                outline: none;
+                padding: 16px;
+            }
+
+            ul.inline {
+                margin: 0;
+                padding-left: 0;
+                list-style-type: none;
+            }
+
+            ul.inline li {
+                display: inline-block;
+                font-size: 12px;
+                padding: 10px;
+            }
+
+            .left {
+                float: left;
+            }
+
+            .right {
+                float: right;
+            }
+
+            .inline {
+                display: inline;
+            }
+
+            footer {
+                background-color: #f2f2f2;
+                position: absolute;
+                overflow: hidden;
+                left: 0;
+                bottom: 0;
+                width: 100vw;
+            }
+
+            footer ul.inline li {
+                padding: 15px;
+            }
+
+            button {
+                background-color: #EEE;
+                border: 1px solid transparent;
+                font-weight: bold;
+                padding: 10px 15px;
+            }
+
+            button:hover {
+                background-color: #DDD;
+                border: 1px solid gray;
+            }
+        </style>
         <title>Google</title>
     </head>
     <body>
         <!--TODO: Replicate Google.com with the knowledge you have!!!-->
         <!--No, you do not need to do the "I'm feeling lucky" or actual search functionality-->
+        <div>
+            <ul class="left inline">
+                <li>About</li>
+                <li>Store</li>
+            </ul>
+            <div class="inline right">
+                <ul class="inline">
+                    <li>Gmail</li>
+                    <li>Images</li>
+                </ul>
+            </div>
+        </div>
+        <img id="logo" src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c51f.png" alt="">
+        <div id="search-bar">
+            <input autocomplete="off" id="search" type="text">
+            <img id="microphone" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/2000px-Google_mic.svg.png" alt="Speak">
+        </div>
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
+        <footer>
+            <ul class="left inline">
+                <li>Advertising</li>
+                <li>Business</li>
+            </ul>
+            <div class="inline right">
+                <ul class="inline">
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                    <li>Settings</li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>
