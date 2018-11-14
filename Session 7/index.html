@@ -64,14 +64,45 @@
                 border-radius: 50px;
             }
         </style>
+        <style>
+            #sign-up-container {
+                display: none;
+                background-color: rgba(0, 0, 0, 0.5);
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100vw;
+                height: 100vh;
+                text-align: center;
+            }
+            #sign-up-form {
+                background-color: white;
+                margin: auto;
+                width: 50%;
+            }
+        </style>
         <title>Session 7</title>
     </head>
     <body>
         <div class="full-screen center flex" id="cover-photo">
             <div>
                 <h1 class="big white-text">Tutorfly</h1>
-                <button class="large round green white-text">Sign me up</button>
+                <button class="large round green white-text" id="sign-up">Sign me up</button>
             </div>
         </div>
+        <div id="sign-up-container">
+            <form id="sign-up-form">
+                <label>Name<input></label>
+                <label>Age<input type="number"></label>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <script>
+            const signUpButton = document.getElementById("sign-up");
+            signUpButton.addEventListener("click", function(event) {
+                const signUpForm = document.getElementById("sign-up-container");
+                signUpForm.style.display = "block";
+            });
+        </script>
     </body>
 </html>
