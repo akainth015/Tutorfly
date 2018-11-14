@@ -15,6 +15,7 @@
 
             #search-bar {
                 border: none;
+                flex-grow: 1;
                 padding: 10px;
             }
 
@@ -37,8 +38,9 @@
             }
 
             #microphone {
-                /*height: 32px;*/
-                width: 32px;
+                height: 20px;
+                margin: 0 8px;
+                /*width: 32px;*/
             }
         </style>
         <title>Google</title>
@@ -48,11 +50,18 @@
             <img id="logo" src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c51f.png" alt="">
             <div id="search-container">
                 <input id="search-bar" type="text">
-                <img id="microphone"
-                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/2000px-Google_mic.svg.png">
+                <img
+                        id="microphone"
+                        onclick="printTarget()"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/2000px-Google_mic.svg.png">
             </div>
             <button class="search">Google Search</button>
             <button class="search">I'm Feeling Lucky</button>
         </div>
+        <script>
+            function printTarget() {
+                console.log("Hello");
+            }
+        </script>
     </body>
 </html>
