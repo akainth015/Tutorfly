@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                font-family: sans-serif;
+                margin: 0;
+            }
+
+            button {
+                border: none;
+                background-color: transparent;
+                font-weight: bold;
+                padding: 30px 40px;
+                text-transform: uppercase;
+            }
+
+            button:focus {
+                outline: none;
+            }
+
+            .big {
+                font-size: 7em;
+            }
+
+            .center {
+                text-align: center;
+                /* For flexboxes */
+                align-items: center;
+                justify-content: center;
+            }
+
+            #cover-photo {
+                background-image: url(https://i.ytimg.com/vi/5-LyRjHlRgQ/maxresdefault.jpg);
+                -webkit-background-size: cover;
+                background-size: cover;
+            }
+
+            .flex {
+                display: flex;
+            }
+
+            .full-screen {
+                height: 100vh;
+                width: 100vw;
+            }
+
+            button.green {
+                background-color: #00A896;
+            }
+
+            .white-text {
+                color: white;
+            }
+
+            .large {
+                font-size: 2em;
+            }
+
+            .round {
+                -webkit-border-radius: 30px;
+                -moz-border-radius: 30px;
+                border-radius: 50px;
+            }
+        </style>
+        <title>Session 7</title>
+    </head>
+    <body>
+        <div class="full-screen center flex" id="cover-photo">
+            <div>
+                <h1 class="big white-text">Tutorfly</h1>
+                <button class="large round green white-text">Sign me up</button>
+            </div>
+        </div>
+    </body>
+</html>
